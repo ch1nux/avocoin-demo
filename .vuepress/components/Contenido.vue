@@ -28,7 +28,6 @@ export default {
   created() {
     client.getEntries()
     .then(entries => {
-      console.log(entries)
       this.content = entries.items
     })
   }

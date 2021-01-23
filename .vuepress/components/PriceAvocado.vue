@@ -6,6 +6,8 @@
 </template>
 
 <script>
+const axios = require('axios')
+
 export default {
   name: 'PriceAvocado',
   data () {
@@ -14,10 +16,9 @@ export default {
     }
   },
   created() {
-    fetch('https://avocoinapp.herokuapp.com/')
-    .then(response => response.json())
-    .then(data => {
-      this.price = data.price
+    axios.get('https://avocoinapp.herokuapp.com/')
+    .then(response => {
+      this.price = response.data.price
     })
   }
 }
