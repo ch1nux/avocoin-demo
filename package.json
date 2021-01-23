@@ -1,0 +1,17 @@
+{
+  "name": "avocoin",
+  "version": "1.0.0",
+  "description": "JAMStack site to show site generators work",
+  "main": "index.js",
+  "scripts": {
+    "start": "vuepress dev",
+    "build": "vuepress build"
+  },
+  "keywords": [],
+  "author": "Jhony Grillet <grilletjhony@gmail.com>",
+  "license": "ISC",
+  "dependencies": {
+    "contentful": "^8.1.7",
+    "vuepress": "^1.8.0"
+  }
+}
